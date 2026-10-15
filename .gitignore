@@ -1,0 +1,5 @@
+# Only the website and the TikTok videos are tracked. Everything else in this folder stays local.
+/*
+!/.gitignore
+!/prompta-site/
+!/TikTok_Prompta/

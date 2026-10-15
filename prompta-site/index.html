@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Prompta – 150 Prompts de IA em Português</title>
+<meta name="description" content="150 prompts de IA prontos a copiar para o ChatGPT, Claude e Gemini. Vendas, redes sociais, emprego, estudos e ensino. PDF + Excel.">
+<meta property="og:title" content="Prompta – 150 Prompts de IA em Português">
+<meta property="og:description" content="Prompts prontos a copiar para o ChatGPT, Claude e Gemini. PDF + Excel por 200 MT.">
+<meta property="og:image" content="assets/capa.jpg">
+<meta name="theme-color" content="#1C1614">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+/* Layout: one warm night page. The glow behind the hero is the brand; everything else stays quiet. */
+:root {
+  --night: #1C1614;
+  --night-2: #261E1B;
+  --line: #3A2E29;
+  --cream: #F4EFE6;
+  --muted: #B9ABA0;
+  --clay: #D97757;
+  --amber: #F2AA4C;
+  --display: "Fraunces", Georgia, serif;
+  --body: "DM Sans", "Segoe UI", system-ui, sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--night); color: var(--cream); font-family: var(--body); font-size: 17px; line-height: 1.6; }
+img, video { max-width: 100%; height: auto; display: block; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-inline: clamp(16px, 4vw, 40px); }
+h1, h2, h3 { font-family: var(--display); line-height: 1.05; margin: 0; text-wrap: balance; }
+h2 { font-size: clamp(32px, 4.6vw, 52px); font-weight: 800; letter-spacing: -0.01em; }
+h3 { font-size: 20px; font-weight: 600; }
+p { margin: 0; }
+.eyebrow { font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--amber); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; border: 0; cursor: pointer;
+  background: var(--amber); color: var(--night); font: 700 18px var(--body); text-decoration: none;
+  padding: 16px 26px; border-radius: 14px; transition: transform .15s ease, box-shadow .15s ease; }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 12px 30px -12px var(--amber); }
+.btn.ghost { background: transparent; color: var(--cream); box-shadow: inset 0 0 0 2px var(--line); }
+.btn.ghost:hover { box-shadow: inset 0 0 0 2px var(--muted); }
+.btn.small { font-size: 15px; padding: 10px 16px; border-radius: 10px; }
+.btn:focus-visible, button:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px solid var(--clay); outline-offset: 3px; }
+
+header { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--night) 85%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+header .wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-block: 12px; }
+.logo { display: flex; align-items: center; gap: 8px; font-family: var(--display); font-weight: 800; font-size: 24px; color: var(--cream); text-decoration: none; }
+.spark { width: 22px; height: 22px; color: var(--clay); }
+
+/* hero */
+.hero { position: relative; overflow: hidden; padding-block: clamp(48px, 8vw, 104px); }
+.hero::before { content: ""; position: absolute; inset: -20% -10% auto auto; width: 70vw; height: 70vw; max-width: 900px; max-height: 900px;
+  background: radial-gradient(circle at 60% 40%, rgba(242,170,76,.45), rgba(217,119,87,.30) 40%, rgba(92,46,92,.25) 65%, transparent 72%); filter: blur(30px); pointer-events: none; }
+.hero .wrap { position: relative; display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(32px, 5vw, 64px); align-items: center; }
+.hero h1 { font-size: clamp(44px, 7vw, 86px); font-weight: 800; letter-spacing: -0.02em; margin-top: 14px; }
+.hero h1 em { font-style: normal; color: var(--amber); }
+.lead { font-size: 19px; color: var(--muted); margin-top: 20px; max-width: 32em; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+.chip { border: 1.5px solid var(--line); border-radius: 99px; padding: 4px 14px; font-size: 14px; font-weight: 500; color: var(--cream); }
+.buy-row { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 18px; margin-top: 30px; }
+.price { font-family: var(--display); font-size: 48px; font-weight: 800; color: var(--cream); line-height: 1; }
+.price small { font-family: var(--body); font-size: 15px; font-weight: 500; color: var(--muted); display: block; margin-top: 6px; }
+.cover { position: relative; transform: rotate(3deg); border-radius: 14px; overflow: hidden; box-shadow: 0 40px 80px -30px rgba(0,0,0,.8), 0 0 0 1px rgba(255,255,255,.06); transition: transform .4s ease; max-width: 440px; margin-inline: auto; }
+.cover:hover { transform: rotate(0deg) scale(1.01); }
+
+section { padding-block: clamp(56px, 8vw, 96px); }
+.head { display: grid; gap: 12px; max-width: 46em; margin-bottom: 36px; }
+.head p { color: var(--muted); font-size: 18px; }
+
+/* demo */
+.demo { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(28px, 5vw, 56px); align-items: center; }
+.demo video { width: 100%; max-width: 360px; aspect-ratio: 9 / 16; border-radius: 26px; background: var(--night-2); box-shadow: 0 0 0 8px #120E0D, 0 30px 60px -20px rgba(0,0,0,.8); margin-inline: auto; }
+.prompt-card { background: var(--night-2); border: 1px solid var(--line); border-radius: 18px; padding: 24px; display: grid; gap: 14px; }
+.prompt-card .label { font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.prompt-card code { display: block; font: 16px/1.55 ui-monospace, "Cascadia Mono", Consolas, monospace; color: var(--cream); white-space: pre-wrap; }
+.prompt-card code b { color: var(--amber); font-weight: 600; }
+.copy-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.copied { color: var(--amber); font-size: 15px; font-weight: 500; }
+
+/* areas */
+.areas { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+.area { background: var(--night-2); border: 1px solid var(--line); border-radius: 14px; padding: 18px; display: grid; gap: 6px; align-content: start; }
+.area .n { font-family: var(--display); font-size: 30px; font-weight: 800; color: var(--clay); line-height: 1; }
+.area b { font-size: 16px; }
+.area span { font-size: 14px; color: var(--muted); }
+
+/* buy */
+.buy { background: linear-gradient(140deg, #2A1F1B, #3A2320 60%, #3B2236); border: 1px solid var(--line); border-radius: 24px; padding: clamp(24px, 5vw, 56px); display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 4vw, 48px); }
+.steps { display: grid; gap: 18px; counter-reset: s; list-style: none; padding: 0; margin: 0; }
+.steps li { display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: start; }
+.steps li::before { counter-increment: s; content: counter(s); display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: var(--clay); color: var(--cream); font: 800 20px var(--display); }
+.steps p { color: var(--muted); }
+.mpesa { background: var(--night); border: 1px solid var(--line); border-radius: 18px; padding: 24px; display: grid; gap: 12px; align-content: start; }
+.mpesa .num { font-family: var(--display); font-size: clamp(34px, 5vw, 46px); font-weight: 800; letter-spacing: .02em; color: var(--amber); font-variant-numeric: tabular-nums; }
+.mpesa .who { color: var(--muted); font-size: 15px; }
+.mpesa .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+.abroad { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
+.abroad a { color: var(--cream); font-weight: 700; }
+
+/* faq */
+.faq { display: grid; gap: 10px; max-width: 820px; }
+details { background: var(--night-2); border: 1px solid var(--line); border-radius: 14px; padding: 4px 22px; }
+summary { cursor: pointer; font-weight: 700; padding-block: 16px; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "+"; color: var(--amber); font-size: 22px; line-height: 1; }
+details[open] summary::after { content: "–"; }
+details p { color: var(--muted); padding-bottom: 18px; }
+
+footer { border-top: 1px solid var(--line); padding-block: 28px 40px; color: var(--muted); font-size: 14px; }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; }
+
+@media (max-width: 900px) {
+  .hero .wrap, .demo, .buy { grid-template-columns: 1fr; }
+  .areas { grid-template-columns: repeat(2, 1fr); }
+  .cover { max-width: 340px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#topo"><svg class="spark" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg>Prompta</a>
+    <a class="btn small" href="#comprar">Comprar · 200 MT</a>
+  </div>
+</header>
+
+<main id="topo">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Em português · PDF + Excel</p>
+        <h1><em>150</em> prompts de IA prontos a copiar e usar</h1>
+        <p class="lead">Instruções testadas para o ChatGPT, Claude e Gemini. Escreve textos de venda, posts, CVs, planos de estudo e muito mais em segundos. Só trocas o que está entre [parênteses].</p>
+        <div class="chips"><span class="chip">ChatGPT</span><span class="chip">Claude</span><span class="chip">Gemini</span><span class="chip">Versões grátis</span></div>
+        <div class="buy-row">
+          <div class="price">200 MT<small>Pagamento único por M-Pesa</small></div>
+          <a class="btn" href="#comprar">Quero o pack →</a>
+          <a class="btn ghost" href="#exemplo">Ver um prompt grátis</a>
+        </div>
+      </div>
+      <img class="cover" src="assets/capa.jpg" alt="Capa do pack 150 Prompts de IA da Prompta" width="744" height="1052">
+    </div>
+  </div>
+
+  <section id="exemplo">
+    <div class="wrap demo">
+      <video src="assets/demo.mp4" poster="assets/capa.jpg" autoplay muted loop playsinline aria-label="Vídeo: um prompt a escrever textos de venda"></video>
+      <div>
+        <div class="head" style="margin-bottom:24px">
+          <p class="eyebrow">Experimenta já</p>
+          <h2>Um prompt grátis para veres como funciona.</h2>
+          <p>Copia, cola no ChatGPT, Claude ou Gemini e troca o que está entre [ ].</p>
+        </div>
+        <div class="prompt-card">
+          <span class="label">Vendas no WhatsApp</span>
+          <code id="free-prompt">Age como vendedor experiente. Escreve 3 textos curtos para o Status do WhatsApp a vender <b>[produto]</b> a <b>[preço]</b> em <b>[cidade]</b>, com emojis, o preço e uma chamada para encomendar.</code>
+          <div class="copy-row">
+            <button class="btn small" id="copy-prompt" type="button">Copiar prompt</button>
+            <span class="copied" id="copied-prompt" role="status"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">O que recebes</p>
+        <h2>150 prompts em 10 áreas.</h2>
+        <p>PDF organizado por tema e uma biblioteca em Excel para procurares e marcares favoritos. Inclui a fórmula do prompt perfeito.</p>
+      </div>
+      <div class="areas">
+        <div class="area"><span class="n">15</span><b>Redes sociais</b><span>Posts, reels e calendário do mês</span></div>
+        <div class="area"><span class="n">15</span><b>Vendas e WhatsApp</b><span>Mensagens que fecham vendas</span></div>
+        <div class="area"><span class="n">15</span><b>Atendimento</b><span>Respostas a clientes difíceis</span></div>
+        <div class="area"><span class="n">15</span><b>Marketing</b><span>Anúncios e ofertas</span></div>
+        <div class="area"><span class="n">15</span><b>Negócio</b><span>Ideias, preços e planos</span></div>
+        <div class="area"><span class="n">15</span><b>Emails</b><span>Escrita profissional</span></div>
+        <div class="area"><span class="n">15</span><b>Produtividade</b><span>Organização e hábitos</span></div>
+        <div class="area"><span class="n">15</span><b>Emprego</b><span>CV, cartas e entrevistas</span></div>
+        <div class="area"><span class="n">15</span><b>Estudantes</b><span>Resumos, testes e planos</span></div>
+        <div class="area"><span class="n">15</span><b>Professores</b><span>Aulas, fichas e avaliação</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="comprar" style="padding-top:0">
+    <div class="wrap">
+      <div class="buy">
+        <div>
+          <p class="eyebrow">Como comprar</p>
+          <h2 style="margin:12px 0 28px">Recebes em minutos no WhatsApp.</h2>
+          <ol class="steps">
+            <li><div><h3>Envia 200 MT por M-Pesa</h3><p>Para o número ao lado.</p></div></li>
+            <li><div><h3>Manda o comprovativo</h3><p>Toca em "Enviar comprovativo" e cola a mensagem de confirmação do M-Pesa.</p></div></li>
+            <li><div><h3>Recebe o pack</h3><p>Enviamos o PDF e o Excel no WhatsApp logo que o pagamento for confirmado.</p></div></li>
+          </ol>
+        </div>
+        <div class="mpesa">
+          <span class="eyebrow">M-Pesa</span>
+          <span class="num" id="mpesa-num">85 111 5954</span>
+          <span class="who" id="mpesa-name"></span>
+          <div class="actions">
+            <button class="btn small ghost" id="copy-num" type="button">Copiar número</button>
+            <a class="btn small" id="wa-proof" href="#" target="_blank" rel="noopener">Enviar comprovativo no WhatsApp</a>
+          </div>
+          <span class="copied" id="copied-num" role="status"></span>
+          <p class="abroad">Estás fora de Moçambique? <a id="wa-abroad" href="#" target="_blank" rel="noopener">Fala connosco no WhatsApp</a> e indicamos outra forma de pagamento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="head"><p class="eyebrow">Perguntas frequentes</p><h2>Antes de comprares.</h2></div>
+      <div class="faq">
+        <details><summary>Preciso de pagar o ChatGPT ou outra IA?</summary><p>Não. O ChatGPT, o Claude e o Gemini têm versões gratuitas que chegam para usar todos os prompts.</p></details>
+        <details><summary>Funciona no telemóvel?</summary><p>Sim. Abres o PDF no telemóvel, copias o prompt e colas na app da IA. Gasta poucos megas.</p></details>
+        <details><summary>Como recebo o pack?</summary><p>Depois de confirmarmos o pagamento, enviamos o PDF e o Excel pelo WhatsApp.</p></details>
+        <details><summary>Posso pagar fora de Moçambique?</summary><p>Sim. Fala connosco no WhatsApp e indicamos outra forma de pagamento para o teu país.</p></details>
+        <details><summary>A IA acerta sempre?</summary><p>Não. A IA pode errar: revê sempre números, preços e datas antes de publicar ou enviar a clientes.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Prompta · Prompts de IA em português</span>
+    <span>WhatsApp e M-Pesa: 85 111 5954</span>
+  </div>
+</footer>
+
+<script>
+  // ---- Settings: change here if needed ----
+  const WHATSAPP = "258851115954";            // WhatsApp number with country code (no + or spaces)
+  const MPESA_NAME = "";                       // Name that appears on M-Pesa, e.g. "Nome: Maria Silva"
+  // -----------------------------------------
+  const wa = (msg) => "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(msg);
+  document.getElementById("wa-proof").href = wa("Olá! Paguei 200 MT por M-Pesa pelo pack de 150 Prompts de IA. Segue o comprovativo:");
+  document.getElementById("wa-abroad").href = wa("Olá! Quero comprar o pack de 150 Prompts de IA e estou fora de Moçambique. Como posso pagar?");
+  if (MPESA_NAME) document.getElementById("mpesa-name").textContent = MPESA_NAME;
+
+  function copy(text, btn, out, done) {
+    const ok = () => { out.textContent = done; setTimeout(() => out.textContent = "", 2500); };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(ok).catch(() => fallback());
+    } else fallback();
+    function fallback() {
+      const r = document.createRange(); r.selectNodeContents(btn); const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+      out.textContent = "Seleciona e copia o texto.";
+    }
+  }
+  document.getElementById("copy-num").addEventListener("click", () =>
+    copy("851115954", document.getElementById("mpesa-num"), document.getElementById("copied-num"), "Número copiado."));
+  document.getElementById("copy-prompt").addEventListener("click", () =>
+    copy(document.getElementById("free-prompt").innerText, document.getElementById("free-prompt"), document.getElementById("copied-prompt"), "Prompt copiado. Cola na tua IA."));
+</script>
+</body>
+</html>
